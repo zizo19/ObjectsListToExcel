@@ -3,6 +3,10 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <Description>This plugin aims to  offer a very simple and generic method to generate an excel file from a list of objects whatever their nature.</Description>
+    <RepositoryUrl>https://github.com/zizo19/ObjectsListToExcel</RepositoryUrl>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>TOUFIK EL AZZAOUI</Authors>
+    <Company>TOUFIK EL AZZAOUI</Company>
   </PropertyGroup>
 
   <ItemGroup>

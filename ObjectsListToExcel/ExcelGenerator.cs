@@ -194,7 +194,10 @@ namespace ObjectsListToExcel
             ws = addHeader(wb, ws, objs, title);
             ws = addBody(ws, objs);
             string path = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile) + @"\Downloads\TestExcelGen20.xlsx";
-            string tempFile = Path.GetTempFileName() + "TestExcelGen.xlsx";
+            if (System.IO.File.Exists(path))
+            {
+                System.IO.File.Delete(path);
+            }
             wb.SaveAs(path);
 
             //wb.Worksheets[1].Name = "Liste";//Renaming the Sheet1 to MySheet
